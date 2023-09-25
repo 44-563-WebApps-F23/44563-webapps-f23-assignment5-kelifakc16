@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>City Names</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header>
-        <h1>Visit cities with Kelifa</h1>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
         <style>
-            /* Style the header */
             h1 {
                 text-align: center;
                 font-size: 24px;
                 color: #333;
             }
-    
-            /* Style the container */
+        
+        
             .container {
                 margin-top: 20px;
                 text-align: center;
             }
-    
-            /* Style the columns */
+        
+        
             .col-sm-2 {
                 background-color: #007bff;
                 color: #fff;
-                padding: 10px;
+                /* padding: 10px; */
                 border-radius: 5px;
-                margin: 5px;
+        
             }
-    
-            /* Style the city names */
+        
+        
             .col-md {
                 background-color: #f8f9fa;
                 padding: 10px;
@@ -45,14 +43,33 @@
                 border-radius: 5px;
                 margin: 5px;
             }
-    
-            /* Add hover effect to city names */
+        
+        
             .col-md:hover {
                 background-color: #007bff;
                 color: #fff;
                 cursor: pointer;
             }
+        
+            .square-image {
+                width: 380px;
+                height: 380px;
+                overflow: hidden;
+            }
+        
+            .square-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         </style>
+</head>
+
+
+<body>
+    <header>
+        <h1>Visit cities with Kelifa</h1>
+
         <div class="container">
             <div class="row">
                 <div class="col-sm-2">K</div>
@@ -70,8 +87,54 @@
                 <div class="col-md">Florence</div>
                 <div class="col-md">Amsterdam</div>
             </div>
-            <p>As we reduce the screen size and reach the "small" breakpoint (around 576px), the row containing the initials (K, C, L, I, F, A) should break first because col-sm-2 columns will start to stack due to limited horizontal space.</p>
+            <p>As we reduce the screen size and reach the "small" breakpoint (around 576px), the row containing the
+                initials (K, C, L, I, F, A) should break first because col-sm-2 columns will start to stack due to
+                limited horizontal space.</p>
+
+
     </header>
-    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="square-image">
+                    <img src="city1.jpg" alt="Kansas city " class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="square-image">
+                    <img src="city2.jpg" alt="Big Ben" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="square-image">
+                    <img src="city3.jpg" alt="Istanbul" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="square-image">
+                    <img src="city1.jpg" alt="Kansas city " class="img-thumbnail">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="square-image">
+                    <img src="city2.jpg" alt="Big Ben" class="img-thumbnail">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="square-image">
+                    <img src="city3.jpg" alt="Istanbul" class="img-thumbnail">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
+
 </html>
